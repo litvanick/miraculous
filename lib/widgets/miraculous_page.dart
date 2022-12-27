@@ -60,6 +60,7 @@ class _MiraculousPageState<T> extends State<MiraculousPage<T>> {
       child: PagedListView<int, FirebaseDocument>.separated(
         pagingController: _pagingController,
         scrollController: scrollController,
+        physics: const AlwaysScrollableScrollPhysics(),
         padding: const EdgeInsets.all(16.0),
         separatorBuilder: (context, index) => SizedBox(height: 16.0),
         builderDelegate: PagedChildBuilderDelegate<FirebaseDocument>(
