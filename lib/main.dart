@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           actions: [
             if (index < controllers.length) IconButton(
               icon: Icon(Icons.refresh_outlined, color: theme.onPrimaryColor),
-              onPressed: () => controllers[index].reload,
+              onPressed: controllers[index].reload,
             ),
           ],
         ),
